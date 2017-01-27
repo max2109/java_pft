@@ -1,4 +1,4 @@
-package ru.stqa.sandbox;
+package ru.stqa.pft.sandbox;
 
 /**
  * Created by alexe on 1/20/2017.

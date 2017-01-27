@@ -1,4 +1,4 @@
-package ru.stqa.sandbox;
+package ru.stqa.pft.sandbox;
 
 public class NewJava {
 
