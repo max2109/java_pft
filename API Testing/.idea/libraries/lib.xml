@@ -1,0 +1,75 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-data-commons-1.5.1.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/aspectjrt-1.7.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/dbunit-2.4.8.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-aop-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/slf4j-api-1.6.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-core-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/guava-14.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/hibernate-core-4.2.2.Final.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/aspectjweaver-1.7.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/hibernate-commons-annotations-4.0.2.Final.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/antlr-2.7.7.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-context-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/bsh-2.0b4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/reflectasm-1.07-shaded.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/commons-io-2.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/lucene-queries-4.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-expression-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/utils-io-1.5.1-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/axis-saaj-1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/jcl-over-slf4j-1.7.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/testng-6.3.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-context-support-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/jul-to-slf4j-1.6.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/axis-1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/jakarta-regexp-1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/utils-core-1.5.1-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/jira-soap-4.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-security-core-3.1.4.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/xmlunit-1.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/lucene-sandbox-4.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/utils-spring-1.5.1-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-jdbc-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-data-jpa-1.3.1.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/objenesis-1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/javassist-3.15.0-GA.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-beans-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/hibernate-entitymanager-4.2.2.Final.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/poi-3.2-FINAL.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-test-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/axis-wsdl4j-1.5.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/utils-test-1.5.1-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/lucene-core-4.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-aspects-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/commons-lang-2.5.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-tx-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/hsqldb-2.2.8.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/lucene-queryparser-4.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/commons-cli-1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/lucene-analyzers-common-4.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/jcommander-1.12.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/kryo-2.21.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/spring-orm-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/commons-discovery-0.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/axis-jaxrpc-1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/minlog-1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/utils-lucene-1.5.1-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/snakeyaml-1.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/asm-4.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/slf4j-log4j12-1.6.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/folks/folks/lib/jboss-logging-3.1.0.GA.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -47,9 +47,9 @@ public class LogOut {
         wd.findElement(By.id("email")).sendKeys("\\undefined");
         wd.findElement(By.id("pass")).click();
         wd.findElement(By.id("pass")).sendKeys("\\undefined");
-      //  wd.findElement(By.xpath("//form[@id='u_0_v']/input[2]")).click();
-      //  wd.findElement(By.xpath("//form[@id='u_0_v']/input[2]")).sendKeys("\\undefined");
-      // wd.findElement(By.id("u_0_t")).click();
+        wd.findElement(By.xpath("//div[1]/div[1]/div/div/div/div/div[2]/form/table/tbody/tr[2]/td[2]/input")).click();
+        wd.findElement(By.xpath("//div[1]/div[1]/div/div/div/div/div[2]/form/table/tbody/tr[2]/td[2]/input")).sendKeys("\\undefined");
+        wd.findElement(By.id("u_0_t")).click();
         wd.findElement(By.id("email")).click();
     }
     

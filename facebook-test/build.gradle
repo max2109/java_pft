@@ -7,5 +7,6 @@ repositories{
 dependencies {
     compile 'org.testng:testng:6.10'
     compile 'org.seleniumhq.selenium:selenium-java:2.53.1'
-
+    compile group: 'com.jayway.restassured', name: 'modules', version: '2.9.0'
+    compile 'org.json:json:20160810'
 }

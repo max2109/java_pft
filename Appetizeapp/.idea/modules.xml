@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Appetizeapp.iml" filepath="$PROJECT_DIR$/.idea/modules/Appetizeapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Appetizeapp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Appetizeapp_main.iml" group="Appetizeapp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Appetizeapp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Appetizeapp_test.iml" group="Appetizeapp" />
+    </modules>
+  </component>
+</project>
