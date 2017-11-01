@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.appmanager;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -8,6 +9,7 @@ import java.util.concurrent.TimeUnit;
  * Created by Alexey on 1/27/2017.
  */
 public class ApplicationManager {
+    //ChromeDriver wd;
     FirefoxDriver wd;
 
     private SessionHelper sessionHelper;
@@ -17,6 +19,7 @@ public class ApplicationManager {
 
 
     public void init() {
+        //wd = new ChromeDriver();
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/");
