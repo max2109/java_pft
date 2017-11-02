@@ -1,9 +1,10 @@
-package ru.stqa.pft.addressbook.Tests;
+package ru.stqa.pft.addressbook.Tests.GroupTests;
 
 import org.testng.annotations.Test;
+import ru.stqa.pft.addressbook.Tests.TestBase;
 import ru.stqa.pft.addressbook.model.GroupData;
 
-public class GroupModificationTest extends TestBase{
+public class GroupModificationTest extends TestBase {
 
     @Test
     public void testModificationTest(){

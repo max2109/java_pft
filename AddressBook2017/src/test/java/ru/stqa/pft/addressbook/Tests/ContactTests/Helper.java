@@ -2,9 +2,10 @@ package ru.stqa.pft.addressbook.Tests.ContactTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import ru.stqa.pft.addressbook.Tests.ContactData3;
+import ru.stqa.pft.addressbook.appmanager.HelperBase;
+import ru.stqa.pft.addressbook.model.ContactData;
 
-public class Helper extends HelperBasic {
+public class Helper extends HelperBase {
 
     public Helper(FirefoxDriver wd) {
         super(wd);
@@ -20,23 +21,23 @@ public class Helper extends HelperBasic {
         click(By.id("content"));
     }
 
-    protected void fillContactCreationForm(ContactData3 contactData3) {
-        type(By.name("firstname"), contactData3.getFirstname());
-        type(By.name("lastname"), contactData3.getLastname());
-        type(By.name("title"), contactData3.getTitle());
-        type(By.name("company"), contactData3.getCompany());
-        type(By.name("address"), contactData3.getAddress());
-        type(By.name("home"), contactData3.getHome());
-        type(By.name("email"), contactData3.getEmail());
+    protected void fillContactCreationForm(ContactData contactData) {
+        type(By.name("firstname"), contactData.getFirstname());
+        type(By.name("lastname"), contactData.getLastname());
+        type(By.name("title"), contactData.getTitle());
+        type(By.name("company"), contactData.getCompany());
+        type(By.name("address"), contactData.getAddress());
+        type(By.name("home"), contactData.getHome());
+        type(By.name("email"), contactData.getEmail());
     }
 
     protected void selectContactForModification() {
        click(By.xpath("//table[@id='maintable']/tbody/tr[12]/td[8]/a/img"));
     }
 
-    protected void fillModificationForm(ContactData3 contactData3) {
-        type(By.name("firstname"), contactData3.getFirstname());
-        type(By.name("lastname"), contactData3.getLastname());
+    protected void fillModificationForm(ContactData contactData) {
+        type(By.name("firstname"), contactData.getFirstname());
+        type(By.name("lastname"), contactData.getLastname());
     }
     protected void submitModificationForm() {
         click(By.xpath("//div[@id='content']/form[1]/input[22]"));

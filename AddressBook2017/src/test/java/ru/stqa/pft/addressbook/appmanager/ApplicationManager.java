@@ -15,7 +15,6 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
-    private ContactHelper contactHelper;
     private String browser;
 
     public ApplicationManager(String browser) {
@@ -51,5 +50,4 @@ public class ApplicationManager {
         return navigationHelper;
     }
 
-    public ContactHelper getContactHelper() { return contactHelper; }
 }

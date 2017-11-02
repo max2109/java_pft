@@ -22,8 +22,6 @@ public class AppManager {
         sessHelper.login("admin", "secret");
     }
 
-
-
     protected void stop() {
         wd.quit();
     }
