@@ -27,6 +27,7 @@ public class HelperBase {
             }
         }
     }
+
     public boolean isAlertPresent() {
         try {
             wd.switchTo().alert();
@@ -35,7 +36,6 @@ public class HelperBase {
             return false;
         }
     }
-
 
     protected boolean isElementPresent(By locator) {
         try {
