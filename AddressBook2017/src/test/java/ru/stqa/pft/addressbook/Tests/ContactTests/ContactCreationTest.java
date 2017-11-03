@@ -10,6 +10,6 @@ public class ContactCreationTest extends TestBasic {
         appman.getContactHelper().initContactCreation();
         appman.getContactHelper().fillContactCreationForm(new ContactData("Max", "Dasya", "CEO", "DMD", "Los Angeles", "Los Angeles", "daniel.dashkoff@dmd.com", "test1"), true);
         appman.getContactHelper().submitContactCreation();
-        appman.getNavHelper().gotoHomePage();
+        appman.getNavigationHelper().gotoHomePage();
     }
 }

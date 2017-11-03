@@ -6,6 +6,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import ru.stqa.pft.addressbook.appmanager.ContactHelper;
+import ru.stqa.pft.addressbook.appmanager.NavigationHelper;
+import ru.stqa.pft.addressbook.appmanager.SessionHelper;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,8 +15,8 @@ public class AppManager {
 
     WebDriver wd;
 
-    private SessHelper sessHelper;
-    private NavHelper navHelper;
+    private SessionHelper sessionHelper;
+    private NavigationHelper navigationHelper;
     private ContactHelper contactHelper;
     private String browser;
 
@@ -33,9 +35,9 @@ public class AppManager {
         wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/group.php");
         contactHelper = new ContactHelper(wd);
-        sessHelper = new SessHelper(wd);
-        navHelper = new NavHelper(wd);
-        sessHelper.login("admin", "secret");
+        sessionHelper = new SessionHelper(wd);
+        navigationHelper = new NavigationHelper(wd);
+        sessionHelper.login("admin", "secret");
     }
 
     protected void stop() {
@@ -46,7 +48,7 @@ public class AppManager {
         return contactHelper;
     }
 
-    public NavHelper getNavHelper() {
-        return navHelper;
+    public NavigationHelper getNavigationHelper() {
+        return navigationHelper;
     }
 }
