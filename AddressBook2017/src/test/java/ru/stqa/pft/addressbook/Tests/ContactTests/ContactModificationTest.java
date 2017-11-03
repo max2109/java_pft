@@ -10,9 +10,9 @@ public class ContactModificationTest extends TestBasic {
     public void ContactModificationTest3() {
 
         appman.getNavHelepr().goToHomePage();
-        appman.getHelper().selectContactForModification();
-        appman.getHelper().fillModificationForm(new ContactData("lexa", "das", null, null,null,null,null));
-        appman.getHelper().submitModificationForm();
+        appman.getContactHelper().selectContactForModification();
+        appman.getContactHelper().fillModificationForm(new ContactData("vasya", "naparnase", null, null,null,null,null, null), false);
+        appman.getContactHelper().submitModificationForm();
         appman.getNavHelepr().goToHomePage();
     }
 }

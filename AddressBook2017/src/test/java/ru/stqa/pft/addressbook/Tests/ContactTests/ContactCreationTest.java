@@ -7,9 +7,9 @@ public class ContactCreationTest extends TestBasic {
 
     @Test
     public void ContactCreationTest3() {
-        appman.getHelper().initContactCreation();
-        appman.getHelper().fillContactCreationForm(new ContactData("Daniel", "Dashkoff", "CEO", "DMD", "Los Angeles", "Los Angeles", "daniel.dashkoff@dmd.com"));
-        appman.getHelper().submitContactCreation();
+        appman.getContactHelper().initContactCreation();
+        appman.getContactHelper().fillContactCreationForm(new ContactData("Max", "Dasya", "CEO", "DMD", "Los Angeles", "Los Angeles", "daniel.dashkoff@dmd.com", "test1"), true);
+        appman.getContactHelper().submitContactCreation();
         appman.getNavHelepr().goToHomePage();
     }
 }

@@ -9,14 +9,14 @@ public class AppManager {
 
     private SessHelper sessHelper;
     private NavHelepr navHelepr;
-    private Helper helper;
+    private ContactHelper contactHelper;
 
 
     protected void init() {
         wd = new FirefoxDriver();
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/group.php");
-        helper = new Helper(wd);
+        contactHelper = new ContactHelper(wd);
         sessHelper = new SessHelper(wd);
         navHelepr = new NavHelepr(wd);
         sessHelper.login("admin", "secret");
@@ -26,8 +26,8 @@ public class AppManager {
         wd.quit();
     }
 
-    public Helper getHelper() {
-        return helper;
+    public ContactHelper getContactHelper() {
+        return contactHelper;
     }
 
     public NavHelepr getNavHelepr() {
