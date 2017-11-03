@@ -8,7 +8,7 @@ public class AppManager {
     FirefoxDriver wd;
 
     private SessHelper sessHelper;
-    private NavHelepr navHelepr;
+    private NavHelper navHelper;
     private ContactHelper contactHelper;
 
 
@@ -18,7 +18,7 @@ public class AppManager {
         wd.get("http://localhost/addressbook/group.php");
         contactHelper = new ContactHelper(wd);
         sessHelper = new SessHelper(wd);
-        navHelepr = new NavHelepr(wd);
+        navHelper = new NavHelper(wd);
         sessHelper.login("admin", "secret");
     }
 
@@ -30,7 +30,7 @@ public class AppManager {
         return contactHelper;
     }
 
-    public NavHelepr getNavHelepr() {
-        return navHelepr;
+    public NavHelper getNavHelper() {
+        return navHelper;
     }
 }
