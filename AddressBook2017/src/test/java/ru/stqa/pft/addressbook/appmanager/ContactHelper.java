@@ -1,6 +1,7 @@
-package ru.stqa.pft.addressbook.Tests.ContactTests;
+package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -11,15 +12,15 @@ import javax.xml.bind.Element;
 
 public class ContactHelper extends HelperBase {
 
-    public ContactHelper(FirefoxDriver wd) {
+    public ContactHelper(WebDriver wd) {
         super(wd);
     }
 
-    protected void initContactCreation() {
+    public void initContactCreation() {
         click(By.linkText("add new"));
     }
 
-    protected void fillContactCreationForm(ContactData contactData, boolean creation) {
+    public void fillContactCreationForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
         type(By.name("title"), contactData.getTitle());
@@ -36,21 +37,21 @@ public class ContactHelper extends HelperBase {
 
 
 
-    protected void submitContactCreation() {
+    public void submitContactCreation() {
         click(By.name("theform"));
         click(By.xpath("//div[@id='content']/form/input[21]"));
         click(By.id("content"));
     }
 
-    protected void selectContactForModification() {
+    public void selectContactForModification() {
        click(By.xpath("//table[@id='maintable']/tbody/tr[12]/td[8]/a/img"));
     }
 
-    protected void fillModificationForm(ContactData contactData, boolean creation) {
+    public void fillModificationForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
     }
-    protected void submitModificationForm() {
+    public void submitModificationForm() {
         click(By.xpath("//div[@id='content']/form[1]/input[22]"));
     }
 }

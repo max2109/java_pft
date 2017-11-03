@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class NavigationHelper extends HelperBase {
 
     public NavigationHelper(WebDriver wd) {
+
         super(wd);
     }
 
@@ -16,10 +17,7 @@ public class NavigationHelper extends HelperBase {
                 && isElementPresent(By.name("name"))){
         return;
         }
-        click(By.linkText("groups"));
-    }
-
-
+        click(By.linkText("groups")); }
 
     public void gotoHomePage() {
         if (isElementPresent(By.id("maintable"))){

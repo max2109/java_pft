@@ -2,14 +2,13 @@ package ru.stqa.pft.addressbook.Tests.ContactTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HelperBasic {
-    protected FirefoxDriver wd;
+    protected WebDriver wd;
 
-    public HelperBasic(FirefoxDriver wd) {
-        this.wd = wd;
-    }
+    public HelperBasic(WebDriver wd) { this.wd = wd; }
 
     protected void click(By locator) {
         wd.findElement(locator).click();

@@ -1,13 +1,13 @@
 package ru.stqa.pft.addressbook.Tests.ContactTests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.addressbook.appmanager.HelperBase;
 
 public class NavHelper extends HelperBase{
-    private FirefoxDriver wd;
 
-    public NavHelper(FirefoxDriver wd) {
+    public NavHelper(WebDriver wd) {
         super(wd);
     }
 

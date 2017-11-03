@@ -1,12 +1,13 @@
 package ru.stqa.pft.addressbook.Tests.ContactTests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SessHelper extends HelperBasic{
 
 
-    public SessHelper(FirefoxDriver wd) {
+    public SessHelper(WebDriver wd) {
         super(wd);
     }
 
