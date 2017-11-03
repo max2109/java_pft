@@ -10,10 +10,6 @@ public class GroupCreationTest extends TestBase {
     @Test
     public void testGroupCreation() {
         app.getNavigationHelper().gotoGroupPage(); //extract methods
-        app.getGroupHelper().initGroupCreation();
-        app.getGroupHelper().fillGroupForm(new GroupData("test1", "test2", null));
-        //вызывается метод fillGroupForm --> в нем создается объект GroupData --> и принимает значения
-        app.getGroupHelper().submitGroupCreation();
-        app.getGroupHelper().returnToGroupPage();
+        app.getGroupHelper().createGroup(new GroupData("test1", "test2", null));
     }
 }
