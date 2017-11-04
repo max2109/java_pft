@@ -9,7 +9,7 @@ public class ContactModificationTest extends TestBase {
 
 
     @Test
-    public void ContactModificationTest3() {
+    public void contactModificationTest3() {
 
         app.getNavigationHelper().gotoHomePage();
         int before = app.getContactHelper().getContactCount();

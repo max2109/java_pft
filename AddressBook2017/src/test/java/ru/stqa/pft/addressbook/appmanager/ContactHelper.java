@@ -49,11 +49,32 @@ public class ContactHelper extends HelperBase {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
     }
+
     public void submitModificationForm() {
         click(By.xpath("//div[@id='content']/form[1]/input[22]"));
     }
 
     public int getContactCount() {
         return wd.findElements(By.name("selected[]")).size();
+    }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.name("selected[]"));
+    }
+
+    public void selectContact() {
+        click(By.name("selected[]"));
+    }
+
+    public void deleteSelectedContact() {
+        click(By.name("delete"));
+    }
+
+    public void selectContactForEdit() {
+        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+    }
+
+    public void deleteContactFromEdit() {
+        click(By.xpath("//div[@id='content']/form[2]/input[2]"));
     }
 }
