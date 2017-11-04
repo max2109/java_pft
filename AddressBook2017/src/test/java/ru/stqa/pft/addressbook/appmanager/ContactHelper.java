@@ -52,4 +52,8 @@ public class ContactHelper extends HelperBase {
     public void submitModificationForm() {
         click(By.xpath("//div[@id='content']/form[1]/input[22]"));
     }
+
+    public int getContactCount() {
+        return wd.findElements(By.name("selected[]")).size();
+    }
 }
