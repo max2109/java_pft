@@ -41,8 +41,10 @@ public class ContactHelper extends HelperBase {
         click(By.id("content"));
     }
 
-    public void selectContactForModification() {
-        click(By.xpath("//table[@id='maintable']/tbody/tr[12]/td[8]/a/img"));
+    public void selectContactForModification(int index){
+            wd.findElements(By.name("selected[]")).get(index).click();
+
+     //   click(By.xpath("//table[@id='maintable']/tbody/tr[12]/td[8]/a/img"));
     }
 
     public void fillModificationForm(ContactData contactData, boolean creation) {
@@ -62,8 +64,8 @@ public class ContactHelper extends HelperBase {
         return isElementPresent(By.name("selected[]"));
     }
 
-    public void selectContact() {
-        click(By.name("selected[]"));
+    public void selectContact(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void deleteSelectedContact() {

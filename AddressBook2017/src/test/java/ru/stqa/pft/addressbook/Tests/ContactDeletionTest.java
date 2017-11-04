@@ -13,8 +13,9 @@ public class ContactDeletionTest extends TestBase{
 //        if (! app.getContactHelper().isThereAContact()){
 //            app.getContactHelper().createContact(new ContactData("Max", "Dasya", "CEO", "DMD", "Los Angeles", "Los Angeles", "daniel.dashkoff@dmd.com", "test1"), true));
 //        }
-        app.getContactHelper().selectContact();
+        app.getContactHelper().selectContact(before -1 );
         app.getContactHelper().selectContactForEdit();
+        app.getContactHelper().deleteSelectedContact();
         app.getContactHelper().deleteContactFromEdit();
         app.getNavigationHelper().gotoHomePage();
         int after = app.getContactHelper().getContactCount();
