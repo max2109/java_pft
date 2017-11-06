@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.Tests.TestBase;
 import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.util.List;
+
 public class GroupDeletionTest extends TestBase {
 
 
@@ -12,15 +14,20 @@ public class GroupDeletionTest extends TestBase {
     public void GroupDeletionTest() {
 
         app.getNavigationHelper().gotoGroupPage();
-        int before = app.getGroupHelper().getGroupCount();
+
         if (! app.getGroupHelper().isThereAGroup()){
             app.getGroupHelper().createGroup(new GroupData("test1", "test2", null));
         }
-        app.getGroupHelper().selectGroup(0);
+       // int before = app.getGroupHelper().getGroupCount(); переменная доблжа быть после предусловия
+        List<GroupData> before = app.getGroupHelper().getGroupList();
+       // app.getGroupHelper().selectGroup(0);
+        app.getGroupHelper().selectGroup(before.size() -1); //берем кол-во списка и вычитаем еденицу
         app.getGroupHelper().deleteSelectedGroups();
         app.getGroupHelper().returnToGroupPage();
-        int after = app.getGroupHelper().getGroupCount();
-        Assert.assertEquals(after, before -1); // проверка количества групп после удаления
+        List<GroupData> after = app.getGroupHelper().getGroupList();
+        Assert.assertEquals(after.size(), before.size() -1);
+        //int after = app.getGroupHelper().getGroupCount();       ПРОИСХОДИТ ЗАМЕНА ПЕРЕМЕННЫХ, ЧТОБЫ ОНИ СОДЕРЖАЛИ СПИСКИ, А НЕ КОЛИЧЕСТВА
+        //Assert.assertEquals(after, before -1); // проверка количества групп после удаления
     }
 
 }
