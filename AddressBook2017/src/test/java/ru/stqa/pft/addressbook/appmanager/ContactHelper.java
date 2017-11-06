@@ -44,7 +44,7 @@ public class ContactHelper extends HelperBase {
     public void selectContactForModification(int index){
             wd.findElements(By.name("selected[]")).get(index).click();
 
-     //   click(By.xpath("//table[@id='maintable']/tbody/tr[12]/td[8]/a/img"));
+        click(By.xpath("//table[@id='maintable']/tbody/tr[12]/td[8]/a/img"));
     }
 
     public void fillModificationForm(ContactData contactData, boolean creation) {

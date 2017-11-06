@@ -17,6 +17,7 @@ public class ContactModificationTest extends TestBase {
         app.getContactHelper().fillModificationForm(new ContactData("vasya", "naparnase", null, null,null,null,null, null), false);
         app.getContactHelper().submitModificationForm();
         app.getNavigationHelper().gotoHomePage();
+
         int after = app.getContactHelper().getContactCount();
         Assert.assertEquals(after, before );
         app.getNavigationHelper().gotoHomePage();
