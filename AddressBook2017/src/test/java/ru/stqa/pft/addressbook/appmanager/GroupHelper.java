@@ -59,6 +59,7 @@ public class GroupHelper extends HelperBase {
         initGroupCreation();
         fillGroupForm(group);
         submitGroupCreation();
+        groupCache = null;
         returnToGroupPage();
     }
     public void modify(GroupData group) {
@@ -66,6 +67,7 @@ public class GroupHelper extends HelperBase {
         initGroupModification();
         fillGroupForm(group);
         submitGroupModification();
+        groupCache = null;
         returnToGroupPage();
     }
 
@@ -78,6 +80,7 @@ public class GroupHelper extends HelperBase {
     public void delete(GroupData group) {
         selectGroupById(group.getId()); //берем кол-во списка и вычитаем еденицу
         deleteSelectedGroups();
+        groupCache = null;
         returnToGroupPage();
     }
 
@@ -86,9 +89,11 @@ public class GroupHelper extends HelperBase {
         return isElementPresent(By.name("selected[]"));
     }
 
-    public int getGroupCount() { //новый метод будет считать количество групп
+    public int count() { //новый метод будет считать количество групп
         return wd.findElements(By.name("selected[]")).size();
     }
+
+    private Groups groupCache = null; //опреледение переменной для кэширования, что ускорит работу тестов
 
 //    public List<GroupData> list() {
 //        List<GroupData> groups = new ArrayList<GroupData>(); //создаем список groups
@@ -104,14 +109,18 @@ public class GroupHelper extends HelperBase {
 //    }
     //создаем множество
     public Groups /*Set<GroupData>*/ all() {
-        Groups groups  = new Groups(); // Set<GroupData> groups = new HashSet<GroupData>();
+        if (groupCache != null ){
+            return new Groups(groupCache);
+        }
+
+        groupCache  = new Groups(); // Set<GroupData> groups = new HashSet<GroupData>();
         List<WebElement> elements = wd.findElements(By.cssSelector("span.group"));
         for (WebElement element: elements){
             String name = element.getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            groups.add(new GroupData().withId(id).withName(name));
+            groupCache.add(new GroupData().withId(id).withName(name));
         }
-        return groups;
+        return new Groups(groupCache); // возвращаем копию groupCache, чтобы его никто не испортил
     }
 
 

@@ -34,13 +34,14 @@ public class GroupModificationTest extends TestBase {
                 withId(modifiedGroup.getId()).withName("test1").withHeader("test2").withFooter("test3");
             //для сохранения старого идентификатора
               //  "test007", "test9", "test10"); //создаем локальную переменную чтобы не писать два раза
-        //int before = app.getGroupHelper().getGroupCount();
+        //int before = app.getGroupHelper().count();
         //app.getGroupHelper().selectGroup(before -1);
         app.group().modify(group); //новый метод переносим в groupHelper
+        assertThat(app.group().count(), equalTo(before.size()));
         Groups after = app.group().all(); //Set<GroupData> after = app.group().all();
-        //int after = app.getGroupHelper().getGroupCount();
+        //int after = app.getGroupHelper().count();
         //Assert.assertEquals(after, before); // проверка количества групп после можификации, должны совпасть
-        Assert.assertEquals(after.size(), before.size());
+       // Assert.assertEquals(after.size(), before.size());
 
             //        before.remove(modifiedGroup);
             //        before.add(group);
