@@ -84,14 +84,18 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//div[@id='content']/form[2]/input[2]"));
     }
 
-//    public List<ContactData> getContactList() {
-//        List<ContactData> contacts = new ArrayList<ContactData>(); //создаем список contacts
-//        List<WebElement> elements = wd.findElements(By.id("maintable")); //список будет извлекаться из webElements    --->> can't find element !!!
-//        for (WebElement element : elements) { //создаем цикл, чтобы по всем элементам прошла переменная element
-//            String name = element.getText();
-//            ContactData contact = new ContactData(name, null,null,null,null,null,null,null);
-//            contacts.add(contact); //добавляем созданный объект в список
-//        }
-//            return contacts;
+    //    private void selectContactByCheckbox(int checkbox) {
+//        wd.findElement(By.cssSelector("input[value='" + id + "']" )).click();
+//    private String checkbox;
+    public List<ContactData> getContactList() {
+        List<ContactData> contacts = new ArrayList<ContactData>(); //создаем список contacts
+        List<WebElement> elements = wd.findElements(By.cssSelector("input[type=checkbox]")); //список будет извлекаться из webElements    --->> can't find element !!!
+        for (WebElement element : elements) { //создаем цикл, чтобы по всем элементам прошла переменная element
+            String name = element.getText();
+            ContactData contact = new ContactData(name, null, null, null, null, null, null, null);
+            contacts.add(contact); //добавляем созданный объект в список
+        }
+        return contacts;
 //    }
+    }
 }

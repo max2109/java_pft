@@ -8,6 +8,7 @@ import ru.stqa.pft.addressbook.model.GroupData;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class GroupCreationTest extends TestBase {
     //после наследования от класса TestBase --> pull members up --> переносит методы в TestBase
@@ -15,11 +16,13 @@ public class GroupCreationTest extends TestBase {
     @Test
     public void testGroupCreation() {
         app.goTo().groupPage(); //extract methods
-        List<GroupData> before = app.group().list();
+        //List<GroupData> before = app.group().list();
+        Set<GroupData> before = app.group().all();
         //int before = app.getGroupHelper().getGroupCount();
         GroupData group = new GroupData().withName("test2");
         app.group().create(group);
-        List<GroupData> after = app.group().list();
+        //List<GroupData> after = app.group().list();
+        Set<GroupData> after = app.group().all();
         //int after = app.getGroupHelper().getGroupCount();
       //  Assert.assertEquals(after, before +1); // проверка количества групп после добавления
         Assert.assertEquals(after.size(), before.size()+1);
@@ -34,13 +37,15 @@ public class GroupCreationTest extends TestBase {
         //новый способ сравнения при помощи сравнивателя Comparator преобразованного в Лямбду
 
       //  group.setId(after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
+        group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()); //function mapToInt преобразует множество в число
+                                                            //проще написать функцию которая преобразует идетификатор в число, чем
+                                                            //написать функцию которая сравнивает два объекта
         before.add(group);
-        Comparator<? super GroupData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
-        before.sort(byId);
-        after.sort(byId);
+//        Comparator<? super GroupData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
+//        before.sort(byId);
+//        after.sort(byId);
        // Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object> (after)); //для сравние нужно преобразовать списки в множества и сравнивать без учета порядка
         Assert.assertEquals(before, after);
     }
-
 
 }
