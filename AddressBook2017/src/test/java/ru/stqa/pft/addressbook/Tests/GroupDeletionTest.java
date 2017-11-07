@@ -19,7 +19,7 @@ public class GroupDeletionTest extends TestBase {
             app.getGroupHelper().createGroup(new GroupData("test1", "test2", null));
         }
        // int before = app.getGroupHelper().getGroupCount(); переменная доблжа быть после предусловия
-        List<GroupData> before = app.getGroupHelper().getGroupList();
+        List<GroupData> before = app.getGroupHelper().getGroupList(); //создание нового списка групп для сравнения
        // app.getGroupHelper().selectGroup(0);
         app.getGroupHelper().selectGroup(before.size() -1); //берем кол-во списка и вычитаем еденицу
         app.getGroupHelper().deleteSelectedGroups();
@@ -28,6 +28,8 @@ public class GroupDeletionTest extends TestBase {
         Assert.assertEquals(after.size(), before.size() -1);
         //int after = app.getGroupHelper().getGroupCount();       ПРОИСХОДИТ ЗАМЕНА ПЕРЕМЕННЫХ, ЧТОБЫ ОНИ СОДЕРЖАЛИ СПИСКИ, А НЕ КОЛИЧЕСТВА
         //Assert.assertEquals(after, before -1); // проверка количества групп после удаления
-    }
 
-}
+        before.remove(before.size() - 1);
+        Assert.assertEquals(before, after);
+        }
+    }

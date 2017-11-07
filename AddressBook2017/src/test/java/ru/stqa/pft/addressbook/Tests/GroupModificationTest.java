@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.Tests.TestBase;
 import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.util.HashSet;
 import java.util.List;
 
 public class GroupModificationTest extends TestBase {
@@ -22,12 +23,18 @@ public class GroupModificationTest extends TestBase {
         //app.getGroupHelper().selectGroup(before -1);
         app.getGroupHelper().selectGroup(before.size() -1);
         app.getGroupHelper().initGroupModification();
-        app.getGroupHelper().fillGroupForm(new GroupData("test007", "test9", "test10"));
+        GroupData group = new GroupData(before.get(before.size() -1).getId(), //для сохранения старого идентификатора
+                "test007", "test9", "test10"); //создаем локальную переменную чтобы не писать два раза
+        app.getGroupHelper().fillGroupForm(group);
         app.getGroupHelper().submitGroupModification();
         app.getGroupHelper().returnToGroupPage();
         List<GroupData> after = app.getGroupHelper().getGroupList();
         //int after = app.getGroupHelper().getGroupCount();
         //Assert.assertEquals(after, before); // проверка количества групп после можификации, должны совпасть
         Assert.assertEquals(after.size(), before.size());
+
+        before.remove (before.size() -1);
+        before.add (group);
+        Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object> (after)); //для сравние нужно преобразовать списки в множества
     }
 }
