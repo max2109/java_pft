@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ContactCreationTest extends TestBase {
 
-    @Test
+    @Test // (enabled = false) для выключения браузера
     public void ContactCreationTest() {
         int before = app.getContactHelper().getContactCount();
        // List<ContactData> before = app.getContactHelper().getContactList();
