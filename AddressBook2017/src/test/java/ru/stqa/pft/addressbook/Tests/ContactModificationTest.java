@@ -11,12 +11,12 @@ public class ContactModificationTest extends TestBase {
     @Test
     public void contactModificationTest3() {
 
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         int before = app.getContactHelper().getContactCount();
         app.getContactHelper().selectContactForModification(before -1);
         app.getContactHelper().fillModificationForm(new ContactData("vasya", "naparnase", null, null,null,null,null, null), false);
         app.getContactHelper().submitModificationForm();
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
 
         int after = app.getContactHelper().getContactCount();
         Assert.assertEquals(after, before );

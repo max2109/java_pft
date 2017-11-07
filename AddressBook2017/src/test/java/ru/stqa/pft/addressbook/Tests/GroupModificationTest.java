@@ -14,7 +14,7 @@ public class GroupModificationTest extends TestBase {
     public void ensurePreconditions(){
         app.goTo().groupPage(); //улучшено чтение тестов
         if (app.group().list().size() == 0) {
-            app.group().create(new GroupData("test1", "test2", null));
+            app.group().create(new GroupData().withName("test1"));
         }
     }
 
@@ -22,8 +22,10 @@ public class GroupModificationTest extends TestBase {
     public void testModificationTest() {
         List<GroupData> before = app.group().list();
         int index = before.size() - 1; //переменная index для упрощения записи указания в послед методах
-        GroupData group = new GroupData(before.get(index).getId(), //для сохранения старого идентификатора
-                "test007", "test9", "test10"); //создаем локальную переменную чтобы не писать два раза
+        GroupData group = new GroupData().
+                withId(before.get(index).getId()).withName("test1").withHeader("test2").withFooter("test3");
+            //для сохранения старого идентификатора
+              //  "test007", "test9", "test10"); //создаем локальную переменную чтобы не писать два раза
         //int before = app.getGroupHelper().getGroupCount();
         //app.getGroupHelper().selectGroup(before -1);
         app.group().modify(index, group); //новый метод переносим в groupHelper

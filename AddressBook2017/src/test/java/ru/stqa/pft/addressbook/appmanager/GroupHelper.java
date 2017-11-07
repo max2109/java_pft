@@ -82,8 +82,8 @@ public class GroupHelper extends HelperBase {
             String name = element.getText(); //получаем текс (имя) из каждого элемента цикла
             //String id = element.findElement(By.tagName("input")).getAttribute("value");
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value")); //преоразованеи строки в числос помощью Integer.parseInt
-            GroupData group = new GroupData(id, name, null, null); //создаем объект GroupData
-            groups.add(group); //добавляем созданный объект в список
+            // GroupData group =  //создаем объект GroupData
+            groups.add(new GroupData().withId(id).withName(name)); //добавляем созданный объект в список
         }
         return groups;
     }

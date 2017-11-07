@@ -8,7 +8,7 @@ public class ContactDeletionTest extends TestBase{
 
     @Test
     public void contactDeletionTest (){
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         int before = app.getContactHelper().getContactCount();
 //        if (! app.getContactHelper().isThereAContact()){
 //            app.getContactHelper().createContact(new ContactData("Max", "Dasya", "CEO", "DMD", "Los Angeles", "Los Angeles", "daniel.dashkoff@dmd.com", "test1"), true));
@@ -16,7 +16,7 @@ public class ContactDeletionTest extends TestBase{
         app.getContactHelper().selectContact(before -1 );
         app.getContactHelper().selectContactForEdit();
         app.getContactHelper().deleteContactFromEdit();
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         int after = app.getContactHelper().getContactCount();
         Assert.assertEquals(after, before -1); // проверка количества групп после удаления
     }
