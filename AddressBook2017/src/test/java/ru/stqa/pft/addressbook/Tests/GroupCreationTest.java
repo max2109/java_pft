@@ -14,12 +14,12 @@ public class GroupCreationTest extends TestBase {
 
     @Test
     public void testGroupCreation() {
-        app.getNavigationHelper().gotoGroupPage(); //extract methods
-        List<GroupData> before = app.getGroupHelper().getGroupList();
+        app.goTo().groupPage(); //extract methods
+        List<GroupData> before = app.group().list();
         //int before = app.getGroupHelper().getGroupCount();
         GroupData group = new GroupData("test77", "test2", null);
-        app.getGroupHelper().createGroup(group);
-        List<GroupData> after = app.getGroupHelper().getGroupList();
+        app.group().create(group);
+        List<GroupData> after = app.group().list();
         //int after = app.getGroupHelper().getGroupCount();
       //  Assert.assertEquals(after, before +1); // проверка количества групп после добавления
         Assert.assertEquals(after.size(), before.size()+1);
@@ -31,7 +31,6 @@ public class GroupCreationTest extends TestBase {
 //                max = g.getId();
 //            }
 //        }
-
         //новый способ сравнения при помощи сравнивателя Comparator преобразованного в Лямбду
 
       //  group.setId(after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
