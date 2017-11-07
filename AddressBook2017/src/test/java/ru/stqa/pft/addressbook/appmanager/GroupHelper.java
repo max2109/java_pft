@@ -67,7 +67,8 @@ public class GroupHelper extends HelperBase {
         List<WebElement> elements = wd.findElements(By.cssSelector("span.group")); //список будет извлекаться из webElements
         for (WebElement element: elements){ //создаем цикл, чтобы по всем элементам прошла переменная element
             String name = element.getText(); //получаем текс (имя) из каждого элемента цикла
-            String id = element.findElement(By.tagName("input")).getAttribute("value");
+            //String id = element.findElement(By.tagName("input")).getAttribute("value");
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value")); //преоразованеи строки в числос помощью Integer.parseInt
             GroupData group = new GroupData(id, name, null, null); //создаем объект GroupData
             groups.add(group); //добавляем созданный объект в список
         }

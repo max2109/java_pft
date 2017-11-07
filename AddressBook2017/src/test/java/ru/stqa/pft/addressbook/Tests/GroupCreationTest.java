@@ -23,8 +23,15 @@ public class GroupCreationTest extends TestBase {
       //  Assert.assertEquals(after, before +1); // проверка количества групп после добавления
         Assert.assertEquals(after.size(), before.size()+1);
 
-        before.add(group);
 
+        int max = 0;
+        for (GroupData g : after){  //цикл чтобы определить максимальное число
+            if (g.getId() > max){
+                max = g.getId();
+            }
+        }
+        group.setId(max);
+        before.add(group);
         Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object> (after)); //для сравние нужно преобразовать списки в множества и сравнивать без учета порядка
     }
 
