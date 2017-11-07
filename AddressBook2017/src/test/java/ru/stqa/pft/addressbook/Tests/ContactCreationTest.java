@@ -15,7 +15,7 @@ public class ContactCreationTest extends TestBase {
         int before = app.getContactHelper().getContactCount();
        // List<ContactData> before = app.getContactHelper().getContactList();
         app.getContactHelper().initContactCreation();
-        app.getContactHelper().fillContactCreationForm(new ContactData("julia", "sush", "CEO", "DMD", "Los Angeles", "Los Angeles", "daniel.dashkoff@dmd.com", "test1"), true);
+        app.getContactHelper().fillContactCreationForm(new ContactData("julia", "sush", "CEO", "DMD", "Los Angeles", "Los Angeles", "daniel.dashkoff@dmd.com", "test007"), true);
         app.getContactHelper().submitContactCreation();
         int after = app.getContactHelper().getContactCount();
        // List<ContactData> after = app.getContactHelper().getContactList();
