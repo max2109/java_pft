@@ -98,4 +98,7 @@ public class ContactHelper extends HelperBase {
         return contacts;
 //    }
     }
+
+    public void createContact(ContactData contactData, boolean b) {
+    }
 }
