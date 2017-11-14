@@ -89,7 +89,7 @@ public class ContactHelper extends HelperBase {
 //    private String checkbox;
     public List<ContactData> getContactList() {
         List<ContactData> contacts = new ArrayList<ContactData>(); //создаем список contacts
-        List<WebElement> elements = wd.findElements(By.cssSelector("input[type=checkbox]")); //список будет извлекаться из webElements    --->> can't find element !!!
+        List<WebElement> elements = wd.findElements((By.name("selected[]"))); //список будет извлекаться из webElements    --->> can't find element !!!
         for (WebElement element : elements) { //создаем цикл, чтобы по всем элементам прошла переменная element
             String name = element.getText();
             ContactData contact = new ContactData(name, null, null, null, null, null, null, null);
