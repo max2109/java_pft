@@ -51,7 +51,7 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
     }
 
-    public void fillModificationForm(ContactData contactData, boolean creation) {
+    public void fillModificationForm(ContactData contactData) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
     }
@@ -92,7 +92,7 @@ public class ContactHelper extends HelperBase {
         List<WebElement> elements = wd.findElements((By.name("selected[]"))); //список будет извлекаться из webElements    --->> can't find element !!!
         for (WebElement element : elements) { //создаем цикл, чтобы по всем элементам прошла переменная element
             String name = element.getText();
-            ContactData contact = new ContactData(name, null, null, null, null, null, null, null);
+            ContactData contact = new ContactData( name, null, null, null, null, null, null, null);
             contacts.add(contact); //добавляем созданный объект в список
         }
         return contacts;
