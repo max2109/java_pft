@@ -8,10 +8,11 @@ public class ContactData {
     private final String company;
     private final String address;
     private final String home;
+    private final String mobile;
     private final String email;
     private final String group;
 
-    public ContactData(String id, String firstname, String lastname, String title, String company, String address, String home, String email, String group) {
+    public ContactData(String id, String firstname, String lastname, String title, String company, String address, String home, String mobile, String email, String group) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -19,10 +20,11 @@ public class ContactData {
         this.company = company;
         this.address = address;
         this.home = home;
+        this.mobile = mobile;
         this.email = email;
         this.group = group;
     }
-    public ContactData( String firstname, String lastname, String title, String company, String address, String home, String email, String group) {
+    public ContactData( String firstname, String lastname, String title, String company, String address, String home, String mobile, String email, String group) {
         this.id = null;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -30,6 +32,7 @@ public class ContactData {
         this.company = company;
         this.address = address;
         this.home = home;
+        this.mobile = mobile;
         this.email = email;
         this.group = group;
     }
@@ -68,34 +71,16 @@ public class ContactData {
                 '}';
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getCompany() {
-        return company;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getHome() {
-        return home;
-    }
-
-    public String getEmail() {
-        return email;
-    }
+    public String getId() { return id; }
+    public String getLastname() { return lastname; }
+    public String getTitle() { return title; }
+    public String getCompany() { return company; }
+    public String getAddress() { return address; }
+    public String getHome() { return home; }
+    public String getMobile() { return mobile; }
+    public String getEmail() { return email; }
 
     public String getGroup() { return group; }
+
 
 }

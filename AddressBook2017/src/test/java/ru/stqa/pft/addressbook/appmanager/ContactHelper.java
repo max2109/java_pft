@@ -31,6 +31,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("company"), contactData.getCompany());
         type(By.name("address"), contactData.getAddress());
         type(By.name("home"), contactData.getHome());
+        type(By.name("mobile"), contactData.getMobile());
         type(By.name("email"), contactData.getEmail());
         if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
@@ -92,7 +93,7 @@ public class ContactHelper extends HelperBase {
         List<WebElement> elements = wd.findElements((By.name("selected[]"))); //список будет извлекаться из webElements    --->> can't find element !!!
         for (WebElement element : elements) { //создаем цикл, чтобы по всем элементам прошла переменная element
             String name = element.getText();
-            ContactData contact = new ContactData( name, null, null, null, null, null, null, null);
+            ContactData contact = new ContactData( name, null, null, null, null, null, null, null, null);
             contacts.add(contact); //добавляем созданный объект в список
         }
         return contacts;
