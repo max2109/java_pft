@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c04117c-99f3-44b6-886a-61a8ca5bdc74" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/generator/GroupDataGenerator.class" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/pft/addressbook/generator/GroupDataGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/Tests/ContactCreationTest.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/Tests/ContactCreationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/resources/groups.csv" afterPath="$PROJECT_DIR$/out/test/resources/groups.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/generator/GroupDataGenerator.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/generator/GroupDataGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/groups.csv" afterPath="$PROJECT_DIR$/src/test/resources/groups.csv" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -45,24 +45,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupDataGenerator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GroupDataGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/generator/GroupDataGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="34" column="100" lean-forward="false" selection-start-line="34" selection-start-column="100" selection-end-line="34" selection-end-column="100" />
+            <state relative-caret-position="656">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1054#1065#0" expanded="true" />
+                <element signature="e#1609#1620#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="groups.csv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="groups.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/groups.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -582,8 +582,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="485" />
-    <option name="y" value="104" />
+    <option name="x" value="811" />
+    <option name="y" value="163" />
     <option name="width" value="1364" />
     <option name="height" value="690" />
   </component>
@@ -830,7 +830,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generator.GroupDataGenerator" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="10 src/test/resources/groups.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-c 25 -f  src/test/resources/groups.csv" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1015,7 +1015,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="485" y="104" width="1364" height="690" extended-state="0" />
+    <frame x="811" y="163" width="1364" height="690" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1468,22 +1468,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/groups.csv">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/generator/GroupDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="656">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1609#1620#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/generator/GroupDataGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/groups.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="34" column="100" lean-forward="false" selection-start-line="34" selection-start-column="100" selection-end-line="34" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1054#1065#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
