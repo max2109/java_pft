@@ -1,0 +1,152 @@
+<list>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 0</name>
+    <header>header 0</header>
+    <footer>footer 0</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 1</name>
+    <header>header 1</header>
+    <footer>footer 1</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 2</name>
+    <header>header 2</header>
+    <footer>footer 2</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 3</name>
+    <header>header 3</header>
+    <footer>footer 3</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 4</name>
+    <header>header 4</header>
+    <footer>footer 4</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 5</name>
+    <header>header 5</header>
+    <footer>footer 5</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 6</name>
+    <header>header 6</header>
+    <footer>footer 6</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 7</name>
+    <header>header 7</header>
+    <footer>footer 7</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 8</name>
+    <header>header 8</header>
+    <footer>footer 8</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 9</name>
+    <header>header 9</header>
+    <footer>footer 9</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 10</name>
+    <header>header 10</header>
+    <footer>footer 10</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 11</name>
+    <header>header 11</header>
+    <footer>footer 11</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 12</name>
+    <header>header 12</header>
+    <footer>footer 12</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 13</name>
+    <header>header 13</header>
+    <footer>footer 13</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 14</name>
+    <header>header 14</header>
+    <footer>footer 14</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 15</name>
+    <header>header 15</header>
+    <footer>footer 15</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 16</name>
+    <header>header 16</header>
+    <footer>footer 16</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 17</name>
+    <header>header 17</header>
+    <footer>footer 17</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 18</name>
+    <header>header 18</header>
+    <footer>footer 18</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 19</name>
+    <header>header 19</header>
+    <footer>footer 19</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 20</name>
+    <header>header 20</header>
+    <footer>footer 20</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 21</name>
+    <header>header 21</header>
+    <footer>footer 21</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 22</name>
+    <header>header 22</header>
+    <footer>footer 22</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 23</name>
+    <header>header 23</header>
+    <footer>footer 23</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+  <ru.stqa.pft.addressbook.model.GroupData>
+    <id>2147483647</id>
+    <name>test 24</name>
+    <header>header 24</header>
+    <footer>footer 24</footer>
+  </ru.stqa.pft.addressbook.model.GroupData>
+</list>
