@@ -1,11 +1,19 @@
 package ru.stqa.pft.addressbook.model;
 
+import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
+@XStreamAlias("group")
+
 public class GroupData {
-
-
+    @XStreamOmitField
     private int id = Integer.MAX_VALUE;     ;//новый аттрибут для сравнения элементов
+    @Expose
     private String name; //аттрибуты
+    @Expose
     private String header; //аттрибуты
+    @Expose
     private String footer; //аттрибуты
 
 //    public GroupData(String name, String header, String footer) { //конструктор 2
