@@ -13,7 +13,11 @@ dependencies {
     compile 'com.beust:jcommander:1.48'
     compile 'com.thoughtworks.xstream:xstream:1.4.8'
     compile 'com.google.code.gson:gson-parent:2.8.2'
+    compile 'ch.qos.logback:logback-classic:1.1.5'
 
+}
+test {
+    useTestNG()
 }
 
 task testGroups(type: Test) {

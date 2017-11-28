@@ -7,7 +7,7 @@ import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
 //это класс посредник
 public class TestBase { //изчезает extends после делегирования
 
-    protected static final ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
+    protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
     //и создается ссылка (переменная app) на новый объект ApplicationManager
     //для доступа к другим классам
     //static для доступа фреймворка для все классов
