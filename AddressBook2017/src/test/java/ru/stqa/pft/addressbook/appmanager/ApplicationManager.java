@@ -26,11 +26,8 @@ public class ApplicationManager {
 
     public ApplicationManager(String browser)  {
         this.browser = browser;
-
         properties  = new Properties();
-
     }
-
 
     public void init() throws IOException {
         String target = System.getProperty("target", "local");

@@ -7,7 +7,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -72,7 +73,7 @@ public class GroupCreationTest extends TestBase {
     public void testBadGroupCreation() {
         app.goTo().groupPage();
         Groups before = app.group().all();
-        GroupData group = new GroupData().withName("test2'");
+        GroupData group = new GroupData().withName("test888'");
         app.group().create(group);
         assertThat(app.group().count(), equalTo(before.size())); //это строка была поднята вверх чтобы ускорить тест
         Groups after = app.group().all(); //здесь загрудается список всех групп

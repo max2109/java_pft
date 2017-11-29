@@ -1,0 +1,19 @@
+4126 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testBadGroupCreation with parameters []
+26486 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Stop test testBadGroupCreation
+26503 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 0'}]
+69409 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Stop test testGroupCreation
+69409 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 1'}]
+112135 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Stop test testGroupCreation
+112136 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 2'}]
+154964 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Stop test testGroupCreation
+154965 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 3'}]
+197799 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Stop test testGroupCreation
+197800 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 4'}]
+240626 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Stop test testGroupCreation
+240626 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 5'}]
+283552 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Stop test testGroupCreation
+283552 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 6'}]
+326645 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Stop test testGroupCreation
+326646 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 7'}]
+362832 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Stop test testGroupCreation
+362833 [main] INFO  r.s.pft.addressbook.Tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 8'}]
