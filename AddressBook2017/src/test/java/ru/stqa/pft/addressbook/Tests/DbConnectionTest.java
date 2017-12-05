@@ -3,7 +3,6 @@ package ru.stqa.pft.addressbook.Tests;
         import org.testng.annotations.Test;
         import ru.stqa.pft.addressbook.model.GroupData;
         import ru.stqa.pft.addressbook.model.Groups;
-
         import java.sql.*;
 
 public class DbConnectionTest {
