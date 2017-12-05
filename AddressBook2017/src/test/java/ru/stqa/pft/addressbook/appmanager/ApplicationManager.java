@@ -23,6 +23,7 @@ public class ApplicationManager {
     private GroupHelper groupHelper;
     private String browser;
     private ContactHelper contactHelper;
+    private DbHelper dbHelper;
 
     public ApplicationManager(String browser)  {
         this.browser = browser;
@@ -47,6 +48,8 @@ public class ApplicationManager {
          sessionHelper = new SessionHelper(wd);
          contactHelper = new ContactHelper(wd);
          sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword")); //вызов метода
+
+        dbHelper = new DbHelper();
     }
 
     public void stop() {
@@ -61,7 +64,8 @@ public class ApplicationManager {
         return navigationHelper;
     } //new name - goTo
 
-    public ContactHelper getContactHelper() {
-        return contactHelper;
+    public ContactHelper getContactHelper() { return contactHelper;
+    }
+    public DbHelper db(){ return dbHelper;
     }
 }
